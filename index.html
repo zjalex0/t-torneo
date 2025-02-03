@@ -55,9 +55,9 @@
       }
       .teams,
       .schedule {
+        width: 100%;
         background-color: #fff;
         padding: 1rem;
-        margin-bottom: 2rem;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
@@ -95,11 +95,6 @@
         background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2024/backgroundDark04L.jpg);
       }
 
-      .containerCup {
-        max-width: 1200px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
 
       section {
         padding: 10px 30px 20px 30px;
@@ -127,63 +122,67 @@
         font-size: 1.2rem;
       }
 
-      .sectiongrupos {
-        padding: 20px;
-        max-width: 1130px;
-        margin: 20px auto;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+      .container-t {
+  width: 100%;
+  max-width: 1200px; /* Opcional: Limita el ancho máximo */
+  margin: auto;
+  padding: 20px;
+}
 
-      .sectiongrupos h2 {
-        color: #333;
-        font-size: 1.8rem;
-        text-align: center;
-      }
+.sectiongrupos {
+  text-align: center;
+}
 
-      /* Estilos de la tabla */
-      .sectiongrupos .tabla {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
+.tabla-container {
+  width: 100%;
+  overflow-x: auto; /* Permite scroll horizontal en pantallas pequeñas */
+  margin-bottom: 20px;
+}
 
-      .sectiongrupos .tabla,
-      .tabla th,
-      .tabla td {
-        border: 1px solid #ddd;
-      }
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Evita que las celdas se compriman demasiado */
+}
 
-      .sectiongrupos .tabla th,
-      .tabla td {
-        padding: 12px;
-        text-align: center;
-      }
+.tabla th, .tabla td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle
+}
+.tabla td img {
+border-radius: 50%;
+}
 
-      .sectiongrupos .tabla th {
-        background-color: #0073e6;
-        color: white;
-      }
 
-      .sectiongrupos .tabla td {
-        background-color: #f9f9f9;
-      }
+.tabla th {
+  background-color: #fff;
+}
 
-      .sectiongrupos .tabla img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-      }
+@media (max-width: 768px) {
+  .tabla-container {
+    overflow-x: auto;
+  }
 
-      /* Estilos de las filas alternadas */
-      .sectiongrupos .tabla tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
+  .tabla {
+    font-size: 14px; /* Reduce el tamaño del texto en móviles */
+  }
+}
 
-      .sectiongrupos .tabla tr:hover {
-        background-color: #ddd;
-      }
+
+      .containerCup {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 1200px; /* Opcional, para limitar el tamaño máximo */
+}
     </style>
   </head>
   <body>
@@ -192,82 +191,75 @@
     </header>
 
     <div class="containerCup">
-      <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
         <!-- Imagen -->
         <image href="cup-t.png" x="0" y="0" width="1200" height="800" />
-
+    
         <!-- Texto sobre la imagen -->
-        <text x="90" y="235" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="90" y="385" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="90" y="520" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="90" y="670" font-family="Arial" font-size="20" fill="black">
-        </text>
-
-        <text x="270" y="300" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="270" y="600" font-family="Arial" font-size="20" fill="black">
-        </text>
-
-        <!--Final-->
-        <text x="455" y="540" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="620" y="540" font-family="Arial" font-size="20" fill="black">
-        </text>
-
-        <text x="805" y="300" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="805" y="600" font-family="Arial" font-size="20" fill="black">
-        </text>
-
-        <text x="990" y="235" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="990" y="385" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="990" y="520" font-family="Arial" font-size="20" fill="black">
-        </text>
-        <text x="990" y="670" font-family="Arial" font-size="20" fill="black">
-        </text>
+        <text x="90" y="235" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="90" y="385" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="90" y="520" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="90" y="670" font-family="Arial" font-size="20" fill="black"></text>
+    
+        <text x="270" y="300" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="270" y="600" font-family="Arial" font-size="20" fill="black"></text>
+    
+        <!-- Final -->
+        <text x="455" y="540" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="620" y="540" font-family="Arial" font-size="20" fill="black"></text>
+    
+        <text x="805" y="300" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="805" y="600" font-family="Arial" font-size="20" fill="black"></text>
+    
+        <text x="990" y="235" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="990" y="385" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="990" y="520" font-family="Arial" font-size="20" fill="black"></text>
+        <text x="990" y="670" font-family="Arial" font-size="20" fill="black"></text>
       </svg>
     </div>
+    
 
     <div class="container">
       <section class="sectiongrupos">
         <h2>Grupo A</h2>
-        <table class="tabla" id="grupoA">
-          <thead>
-            <tr>
+        <div class="tabla-container">
+          <table class="tabla" id="grupoA">
+            <thead>
+              <tr>
                 <th style="width: 10%;">Posición</th>
                 <th style="width: 40%;">Jugador</th>
                 <th style="width: 40%;">Equipo</th>
                 <th style="width: 10%;">Puntuación</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Los jugadores del Grupo A se insertarán aquí -->
-          </tbody>
-        </table>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Jugadores del Grupo A -->
+            </tbody>
+          </table>
+        </div>
+    
         <h2>Grupo B</h2>
-        <table class="tabla" id="grupoB">
-          <thead>
-            <tr>
-              <th style="width: 10%;">Posición</th>
-              <th style="width: 40%;">Jugador</th>
-              <th style="width: 40%;">Equipo</th>
-              <th style="width: 10%;">Puntuación</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Los jugadores del Grupo B se insertarán aquí -->
-          </tbody>
-        </table>
+        <div class="tabla-container">
+          <table class="tabla" id="grupoB">
+            <thead>
+              <tr>
+                <th style="width: 10%;">Posición</th>
+                <th style="width: 40%;">Jugador</th>
+                <th style="width: 40%;">Equipo</th>
+                <th style="width: 10%;">Puntuación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Jugadores del Grupo B -->
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
+    
 
-    <section>
       <div class="container">
+        <section>
         <h1>Reglas del Torneo de Fútbol</h1>
 
         <h2>1. Formato del Torneo</h2>
@@ -359,12 +351,11 @@
             <li><span class="rule-title">Modificaciones:</span> Los organizadores se reservan el derecho de modificar las reglas si es necesario.</li>
             <li><span class="rule-title">Instrucciones:</span> Los jugadores deben seguir las instrucciones del árbitro y organizadores.</li>
         </ul>
-    </div>
-   
     </section>
+  </div>
 
     <div class="container">
-      <section class="schedule">
+      <section >
         <h2>Calendario de Partidos</h2>
         <ul class="schedule-list" id="schedule-list"></ul>
       </section>
@@ -389,7 +380,7 @@
             const scheduleList = document.getElementById("schedule-list");
             data.partidos.forEach((match) => {
               const li = document.createElement("li");
-             // li.innerHTML = `<img src="https://placehold.co/50x50" alt="Logo del ${match.equipo1}" width="50" height="50"><span>${match.index} - ${match.equipo1} vs ${match.equipo2}</span>`;
+              li.innerHTML = `<img src="https://placehold.co/50x50" alt="Logo del ${match.equipo1}" width="50" height="50"><span>${match.index} - ${match.equipo1} vs ${match.equipo2}</span>`;
               scheduleList.appendChild(li);
             });
           });
@@ -398,7 +389,7 @@
 
     <script>
       // URL del archivo JSON (puede ser local o remoto)
-      const jsonFilePath = "equipos.json"; // Reemplaza con la ruta correcta a tu archivo JSON
+      const jsonFilePath = "data.json"; // Reemplaza con la ruta correcta a tu archivo JSON
 
       // Función para leer y procesar el archivo JSON
       fetch(jsonFilePath)
@@ -422,7 +413,7 @@
               const row = document.createElement("tr");
               row.innerHTML = `
                         <td>${index + 1}</td>
-                        <td><img src="${jugador.logo}" alt="Logo ${jugador.nombre}"> ${jugador.nombre}</td>
+                        <td><img src="${jugador.logo}" alt="Logo ${jugador.nombre}" width="50" height="50"> <span>${jugador.nombre}</span></td>
                         <td>${jugador.equipo || ""}</td>
                         <td>${jugador.puntuacion}</td>
                     `;
