@@ -1,0 +1,442 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Campeonato de Fútbol en Videojuego</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2024/tip-bg-mobile.jpg);
+      }
+      header {
+        background-color: #000c41;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      nav {
+        background-color: #444;
+        padding: 0.5rem 0;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 1rem;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .teams,
+      .schedule {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .teams h2,
+      .schedule h2 {
+        margin-top: 0;
+      }
+      .team-list,
+      .schedule-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .team-list li,
+      .schedule-list li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .team-list li:last-child,
+      .schedule-list li:last-child {
+        border-bottom: none;
+      }
+      .team-list li img,
+      .schedule-list li img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+      .team-list li span,
+      .schedule-list li span {
+        vertical-align: middle;
+      }
+      footer {
+        background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2024/backgroundDark04L.jpg);
+      }
+
+      .containerCup {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      section {
+        padding: 10px 30px 20px 30px;
+        max-width: 1100px;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .rule-title {
+        font-weight: bold;
+        color: #0073e6;
+      }
+      .example {
+        font-size: 1.1rem;
+        color: #555;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin: 10px 0;
+        font-size: 1.2rem;
+      }
+
+      .sectiongrupos {
+        padding: 20px;
+        max-width: 1130px;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .sectiongrupos h2 {
+        color: #333;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      /* Estilos de la tabla */
+      .sectiongrupos .tabla {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .sectiongrupos .tabla,
+      .tabla th,
+      .tabla td {
+        border: 1px solid #ddd;
+      }
+
+      .sectiongrupos .tabla th,
+      .tabla td {
+        padding: 12px;
+        text-align: center;
+      }
+
+      .sectiongrupos .tabla th {
+        background-color: #0073e6;
+        color: white;
+      }
+
+      .sectiongrupos .tabla td {
+        background-color: #f9f9f9;
+      }
+
+      .sectiongrupos .tabla img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      /* Estilos de las filas alternadas */
+      .sectiongrupos .tabla tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .sectiongrupos .tabla tr:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UEFA Champions The Pelas-League</h1>
+    </header>
+
+    <div class="containerCup">
+      <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+        <!-- Imagen -->
+        <image href="cup-t.png" x="0" y="0" width="1200" height="800" />
+
+        <!-- Texto sobre la imagen -->
+        <text x="90" y="235" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="90" y="385" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="90" y="520" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="90" y="670" font-family="Arial" font-size="20" fill="black">
+        </text>
+
+        <text x="270" y="300" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="270" y="600" font-family="Arial" font-size="20" fill="black">
+        </text>
+
+        <!--Final-->
+        <text x="455" y="540" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="620" y="540" font-family="Arial" font-size="20" fill="black">
+        </text>
+
+        <text x="805" y="300" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="805" y="600" font-family="Arial" font-size="20" fill="black">
+        </text>
+
+        <text x="990" y="235" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="990" y="385" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="990" y="520" font-family="Arial" font-size="20" fill="black">
+        </text>
+        <text x="990" y="670" font-family="Arial" font-size="20" fill="black">
+        </text>
+      </svg>
+    </div>
+
+    <div class="container">
+      <section class="sectiongrupos">
+        <h2>Grupo A</h2>
+        <table class="tabla" id="grupoA">
+          <thead>
+            <tr>
+                <th style="width: 10%;">Posición</th>
+                <th style="width: 40%;">Jugador</th>
+                <th style="width: 40%;">Equipo</th>
+                <th style="width: 10%;">Puntuación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Los jugadores del Grupo A se insertarán aquí -->
+          </tbody>
+        </table>
+        <h2>Grupo B</h2>
+        <table class="tabla" id="grupoB">
+          <thead>
+            <tr>
+              <th style="width: 10%;">Posición</th>
+              <th style="width: 40%;">Jugador</th>
+              <th style="width: 40%;">Equipo</th>
+              <th style="width: 10%;">Puntuación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Los jugadores del Grupo B se insertarán aquí -->
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <section>
+      <div class="container">
+        <h1>Reglas del Torneo de Fútbol</h1>
+
+        <h2>1. Formato del Torneo</h2>
+        <ul>
+          <li><span class="rule-title">Fecha:</span> 8 de febrero de 2025 a las 14:00.</li>
+          <li><span class="rule-title">Fecha inicio de inscripción:</span> 4 de febrero de 2025 a las 00:00.</li>
+          <li><span class="rule-title">Fecha fin de inscripción:</span> 6 de febrero de 2025 a las 23:59.</li>
+          <li><span class="rule-title">Plataforma:</span> El juego se llevará a cabo en PES 2021 en XBOX.</li>
+          <li><span class="rule-title">Grupos:</span> El torneo se jugará en dos grupos: <strong>Grupo A</strong> y <strong>Grupo B</strong>, con 5 jugadores en cada grupo.</li>
+            <li><span class="rule-title">Partidos:</span> Los partidos se jugarán en formato de <strong>ida</strong> (todos contra todos).</li>
+            <li><span class="rule-title">Eliminación:</span> Después de los partidos de ida, los jugadores con menor puntuación serán eliminados. Los 8 mejores clasificados pasarán a la fase de eliminación directa.</li>
+        </ul>
+
+        <h2>2. Reglas de Selección de Equipos</h2>
+        <ul>
+          <li>Cada participante <strong>solo podrá inscribirse con un equipo único</strong>. No se permiten equipos repetidos dentro del torneo.</li>
+          <li>En caso de que dos participantes seleccionen el mismo equipo, <strong>se otorgará el equipo al primero que haya completado su inscripción.</strong></li>
+          <li>La inscripción estará habilitada <strong>desde el martes a las 00:00 hasta el jueves a las 23:59</strong>. Después de este período, no se podrán hacer cambios de equipo ni nuevas inscripciones.</li>
+        </ul>
+
+        <h2>3. Puntuación</h2>
+        <ul>
+            <li><span class="rule-title">Victoria:</span> 3 puntos.</li>
+            <li><span class="rule-title">Empate:</span> 1 punto para cada equipo.</li>
+            <li><span class="rule-title">Derrota:</span> 0 puntos.</li>
+        </ul>
+
+        <h2>4. Fase de Grupos</h2>
+        <ul>
+            <li><span class="rule-title">Formato:</span> Cada grupo jugará partidos de ida entre todos sus jugadores, los grupos se armaran de manera aleatoria una vez inscritos el total de jugadores.</li>
+            <li><span class="rule-title">Clasificación:</span> Los jugadores con más puntos avanzan a la siguiente fase. En caso de empate, se decide por diferencia de goles.</li>
+        </ul>
+
+        <h2>5. Fase de Eliminación Directa</h2>
+        <ul>
+            <li><span class="rule-title">Formato KO:</span> Los partidos de eliminación directa se jugarán en formato <strong>sistema KO</strong> (el perdedor queda eliminado).</li>
+            <li><span class="rule-title">Tiempo Extra y Penales:</span> En caso de empate en tiempo reglamentario, se jugara la prórroga. Si persiste el empate, se decidirá por una serie de penales.</li>
+        </ul>
+
+        <h2>6. Partidos</h2>
+        <ul>
+            <li><span class="rule-title">Horarios:</span> Los partidos se jugaran de acuerdo al orden establecido en el calendario.</li>
+            <li><span class="rule-title">Puntualidad:</span> Los jugadores deben estar presentes antes de cada partido para evitar retrasos.</li>
+            <li><span class="rule-title">Ausencias:</span> Si un jugador no se presenta sin aviso previo, se le dará una derrota por 3-0.</li>
+            <li><span class="rule-title">Plantillas y formaciones:</span> Cada participante dispondrá de 3 minutos antes del inicio del partido para realizar ajustes en su equipo, como cambios de jugadores o modificaciones en la formación. Para evitar retrasos en el cronograma del torneo, se recomienda a los jugadores llegar con anticipación si desean realizar ajustes más detallados en sus plantillas y estrategias. De esta manera, podrán guardar sus configuraciones con tiempo y evitar contratiempos antes del inicio del partido.</li>
+        </ul>
+
+        <h2>7. Premios</h2>
+        <ul>
+            <li><span class="rule-title">1er Lugar:</span> 70% del valor recaudado por inscripción.</li>
+            <li><span class="rule-title">2do Lugar:</span> 30% del valor recaudado por inscripción.</li>
+            <li><span class="rule-title">Reparto:</span> El reparto de premios se realizará al finalizar el torneo.</li>
+        </ul>
+
+        <h2>8. Comportamiento y Fair Play</h2>
+        <ul>
+            <li><span class="rule-title">Deportividad:</span> Todos los jugadores deben respetar las reglas y comportarse de manera deportiva.</li>
+            <li><span class="rule-title">Antideportividad:</span> Cualquier comportamiento antideportivo será motivo de eliminación inmediata del torneo.</li>
+        </ul>
+
+        <h2>9. Faltas y Sanciones</h2>
+        <ul>
+            <li>Para garantizar el juego limpio y una mejor experiencia en los partidos, se establece un límite de tarjetas por partido y por torneo.</li>
+        </ul>
+        <h3>* Faltas Leves:</h3>
+        <ul>
+          <li><span class="rule-title">Tarjeta Amarilla 🟨:</span> Si un participante acumula 5 tarjetas amarillas en un mismo partido, el partido será suspendido y se le otorgará una derrota por 3-0.</li>
+          <li><span class="rule-title">Tarjeta Roja 🟥:</span> Si un participante recibe 2 tarjetas rojas en un mismo partido, el partido se suspenderá y se le dará una derrota por 3-0.</li>
+        </ul>
+        <h3>* Faltas Graves:</h3>
+        <ul>
+          <li><span class="rule-title">Acumulación de Tarjetas Amarillas 🟨:</span> Si un participante acumula 12 tarjetas amarillas durante el torneo, será automáticamente expulsado, y su oponente ganará el partido con un marcador de 3-0.</li>
+          <li><span class="rule-title">Acumulación de Tarjetas Rojas 🟥:</span>Las tarjetas rojas no se borran al pasar de fase. Si un participante acumula 5 tarjetas rojas durante el torneo, será automáticamente expulsado, y su oponente ganará el partido con un marcador de 3-0.</li>
+        </ul>
+        <h3>* Deducción del Premio por Tarjetas Acumuladas:</h3>
+        <ul>
+          <li>Por cada tarjeta amarilla 🟨 acumulada, se le descontará un 2% del premio total</li>
+          <li>Por cada tarjeta roja 🟥 acumulada, se le descontará un 5% del premio total.</li>
+        </ul>
+
+        <h2>10. Inscripciones</h2>
+        <ul>
+            <li><span class="rule-title">Costo:</span> La inscripción tiene un costo de <span class="rule-title">$10k por jugador</span> y debe ser pagado antes de la fecha límite.</li>
+            <li><span class="rule-title">Uso de Inscripción:</span> El monto se utilizará para financiar los premios o cubrir otros costos operativos en caso de ser requerido.</li>
+        </ul>
+
+        <h2>11. Otras Disposiciones</h2>
+        <ul>
+            <li><span class="rule-title">Modificaciones:</span> Los organizadores se reservan el derecho de modificar las reglas si es necesario.</li>
+            <li><span class="rule-title">Instrucciones:</span> Los jugadores deben seguir las instrucciones del árbitro y organizadores.</li>
+        </ul>
+    </div>
+   
+    </section>
+
+    <div class="container">
+      <section class="schedule">
+        <h2>Calendario de Partidos</h2>
+        <ul class="schedule-list" id="schedule-list"></ul>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./app/data.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const teamList = document.getElementById("team-list");
+            data.forEach((team) => {
+              const li = document.createElement("li");
+              li.innerHTML = `<img src="${team.logo}" alt="Logo del ${team.nombre}" width="50" height="50"><span>${team.nombre}</span>`;
+              teamList.appendChild(li);
+            });
+          });
+
+        fetch("partidos.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const scheduleList = document.getElementById("schedule-list");
+            data.partidos.forEach((match) => {
+              const li = document.createElement("li");
+             // li.innerHTML = `<img src="https://placehold.co/50x50" alt="Logo del ${match.equipo1}" width="50" height="50"><span>${match.index} - ${match.equipo1} vs ${match.equipo2}</span>`;
+              scheduleList.appendChild(li);
+            });
+          });
+      });
+    </script>
+
+    <script>
+      // URL del archivo JSON (puede ser local o remoto)
+      const jsonFilePath = "equipos.json"; // Reemplaza con la ruta correcta a tu archivo JSON
+
+      // Función para leer y procesar el archivo JSON
+      fetch(jsonFilePath)
+        .then((response) => response.json())
+        .then((data) => {
+          // Dividir los jugadores en grupos A y B
+          const grupoA = data.filter((jugador) => jugador.grupo === "A");
+          const grupoB = data.filter((jugador) => jugador.grupo === "B");
+
+          // Ordenar los jugadores de cada grupo por puntuación de mayor a menor
+          grupoA.sort((a, b) => b.puntuacion - a.puntuacion);
+          grupoB.sort((a, b) => b.puntuacion - a.puntuacion);
+
+          // Seleccionamos las tablas para insertar los datos de cada grupo
+          const grupoATableBody = document.querySelector("#grupoA tbody");
+          const grupoBTableBody = document.querySelector("#grupoB tbody");
+
+          // Función para agregar jugadores a la tabla
+          function agregarJugadoresATabla(jugadores, tablaBody) {
+            jugadores.forEach((jugador, index) => {
+              const row = document.createElement("tr");
+              row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td><img src="${jugador.logo}" alt="Logo ${jugador.nombre}"> ${jugador.nombre}</td>
+                        <td>${jugador.equipo || ""}</td>
+                        <td>${jugador.puntuacion}</td>
+                    `;
+              tablaBody.appendChild(row);
+            });
+          }
+
+          // Agregar jugadores a cada tabla
+          agregarJugadoresATabla(grupoA, grupoATableBody);
+          agregarJugadoresATabla(grupoB, grupoBTableBody);
+        })
+        .catch((error) => {
+          console.error("Error al cargar el archivo JSON:", error);
+        });
+    </script>
+  </body>
+</html>
