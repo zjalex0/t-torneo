@@ -603,7 +603,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("./app/data.json")
+        fetch("./app/data.json", { cache: "no-cache" })
           .then((response) => response.json())
           .then((data) => {
             const teamList = document.getElementById("team-list");
@@ -632,7 +632,7 @@
       const jsonFilePath = "data.json"; // Reemplaza con la ruta correcta a tu archivo JSON
 
       // Función para leer y procesar el archivo JSON
-      fetch(jsonFilePath)
+      fetch(jsonFilePath, { cache: "no-cache" })
         .then((response) => response.json())
         .then((data) => {
           // Dividir los jugadores en grupos A y B
