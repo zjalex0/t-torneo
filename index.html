@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>UEFA Champions The Pelas-League</title>
+    <title>Campeonato de Fútbol en Videojuego</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
@@ -306,13 +306,30 @@
 
     <div class="container">
       <section class="sectiongrupos">
+        <h2>Equipos</h2>
+        <div class="tabla-container">
+          <table class="tabla" id="tablaequipos">
+            <thead>
+              <tr>
+                <th style="width: 10%">#</th>
+                <th style="width: 40%">Jugador</th>
+                <th style="width: 50%">Equipo</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="sectiongrupos">
         <h2>Grupo A</h2>
         <div class="tabla-container">
           <table class="tabla" id="grupoA">
             <thead>
               <tr>
                 <th style="width: 10%">Posición</th>
-                <th style="width: 40%">Jugador</th>
                 <th style="width: 40%">Equipo</th>
                 <th style="width: 10%">Puntuación</th>
               </tr>
@@ -329,7 +346,6 @@
             <thead>
               <tr>
                 <th style="width: 10%">Posición</th>
-                <th style="width: 40%">Jugador</th>
                 <th style="width: 40%">Equipo</th>
                 <th style="width: 10%">Puntuación</th>
               </tr>
@@ -374,12 +390,13 @@
             formato de <strong>ida</strong> (todos contra todos).
           </li>
           <li>
-            <span class="rule-title">Eliminación:</span> Cada equipo disputará un
-            total de <strong>4 fechas</strong> dentro de su respectivo grupo, acumulando puntos
-            según su desempeño en cada partido. Una vez finalizadas las 4
-            fechas, el equipo con la menor puntuación en cada grupo será
-            <strong>eliminado</strong> del torneo. Los equipos restantes avanzarán a los <strong>cuartos
-            de final</strong>, donde se enfrentarán en partidos de eliminación directa.
+            <span class="rule-title">Eliminación:</span> Cada equipo disputará
+            un total de <strong>4 fechas</strong> dentro de su respectivo grupo,
+            acumulando puntos según su desempeño en cada partido. Una vez
+            finalizadas las 4 fechas, el equipo con la menor puntuación en cada
+            grupo será <strong>eliminado</strong> del torneo. Los equipos
+            restantes avanzarán a los <strong>cuartos de final</strong>, donde
+            se enfrentarán en partidos de eliminación directa.
           </li>
         </ul>
 
@@ -621,6 +638,7 @@
           // Dividir los jugadores en grupos A y B
           const grupoA = data.filter((jugador) => jugador.grupo === "A");
           const grupoB = data.filter((jugador) => jugador.grupo === "B");
+          const grupoAll = data.filter((jugador) => !!jugador.logo);
 
           // Ordenar los jugadores de cada grupo por puntuación de mayor a menor
           grupoA.sort((a, b) => b.puntuacion - a.puntuacion);
@@ -629,6 +647,7 @@
           // Seleccionamos las tablas para insertar los datos de cada grupo
           const grupoATableBody = document.querySelector("#grupoA tbody");
           const grupoBTableBody = document.querySelector("#grupoB tbody");
+          const tablaequipos = document.querySelector("#tablaequipos tbody");
 
           // Función para agregar jugadores a la tabla
           function agregarJugadoresATabla(jugadores, tablaBody) {
@@ -636,17 +655,32 @@
               const row = document.createElement("tr");
               row.innerHTML = `
                         <td>${index + 1}</td>
-                        <td><img src="${jugador.logo}" alt="Logo ${
-                jugador.nombre
-              }" width="50" height="50"> <span>${jugador.nombre}</span></td>
-                        <td>${jugador.equipo || ""}</td>
+                        <td>${!!jugador.logo ? `<img src="${jugador.logo}" alt="Logo ${jugador.nombre}" width="50" height="50">` : ''}</td>
                         <td>${jugador.puntuacion}</td>
                     `;
               tablaBody.appendChild(row);
             });
           }
 
-          // Agregar jugadores a cada tabla
+          // Función para agregar jugadores a la tabla
+          function agregarJugadoresAll(jugadores, tablaBody) {
+            jugadores.forEach((jugador, index) => {
+              const row = document.createElement("tr");
+              row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td><span>${jugador.nombre}</span></td>
+                        <td>${!!jugador.logo ? `<img src="${jugador.logo}" alt="Logo ${jugador.nombre}" width="50" height="50">` : ''}</td>
+                        ${
+                          !!jugador.puntuacion
+                            ? `<td>${jugador.puntuacion}</td>`
+                            : ""
+                        }
+                    `;
+              tablaBody.appendChild(row);
+            });
+          }
+
+          agregarJugadoresAll(grupoAll, tablaequipos);
           agregarJugadoresATabla(grupoA, grupoATableBody);
           agregarJugadoresATabla(grupoB, grupoBTableBody);
         })
@@ -656,4 +690,3 @@
     </script>
   </body>
 </html>
-
