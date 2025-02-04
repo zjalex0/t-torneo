@@ -1,0 +1,66 @@
+[
+    {
+        "nombre": "Erick",
+        "logo": "",
+        "puntuacion": 0,
+        "equipo": "",
+        "grupo": ""
+    },
+    {
+        "nombre": "Julio",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_64x64.png",
+        "puntuacion": 0,
+        "equipo": "Juventus",
+        "grupo": ""
+    },
+    {
+        "nombre": "Abne",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/-_cmntP5q_pHL7g5LfkRiw_64x64.png",
+        "puntuacion": 0,
+        "equipo": "Bayern de Múnich",
+        "grupo": ""
+    },
+    {
+        "nombre": "Diego",
+        "logo": "",
+        "puntuacion": 0,
+        "grupo": ""
+    },
+    {
+        "nombre": "Eduardo",
+        "logo": "",
+        "puntuacion": 0,
+        "equipo": "Juventud",
+        "grupo": ""
+    },
+    {
+        "nombre": "Adrian",
+        "logo": "",
+        "puntuacion": 0,
+        "grupo": ""
+    },
+    {
+        "nombre": "David",
+        "logo": "",
+        "puntuacion": 0,
+        "grupo": ""
+    },
+    {
+        "nombre": "Manuel",
+        "logo": "",
+        "puntuacion": 0,
+        "grupo": ""
+    },
+    {
+        "nombre": "Jaime",
+        "logo": "",
+        "puntuacion": 0,
+        "grupo": ""
+    },
+    {
+        "nombre": "Luigi",
+        "logo": "",
+        "puntuacion": 0,
+        "grupo": ""
+    }
+]
