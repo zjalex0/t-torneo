@@ -35,8 +35,9 @@
     },
     {
         "nombre": "Adrian",
-        "logo": "",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
         "puntuacion": 0,
+        "equipo": "Real Madrid",
         "grupo": ""
     },
     {
