@@ -60,7 +60,8 @@
     },
     {
         "nombre": "Luigi",
-        "logo": "",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
+        "equipo": "Barcelona",
         "puntuacion": 0,
         "grupo": ""
     }
