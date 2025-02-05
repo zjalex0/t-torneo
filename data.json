@@ -3,7 +3,7 @@
         "nombre": "Erick",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
         "puntuacion": 0,
-        "equipo": "Francia",
+        "equipo": "Real Madrid",
         "grupo": ""
     },
     {
@@ -35,9 +35,9 @@
     },
     {
         "nombre": "Adrian",
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/nGfV05dipbAc7zzojivKew_64x64.png",
         "puntuacion": 0,
-        "equipo": "Real Madrid",
+        "equipo": "Liverpool",
         "grupo": ""
     },
     {
@@ -62,6 +62,13 @@
         "nombre": "Luigi",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
         "equipo": "Barcelona",
+        "puntuacion": 0,
+        "grupo": ""
+    },
+    {
+        "nombre": "Alejo",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_64x64.png",
+        "equipo": "Manchester City",
         "puntuacion": 0,
         "grupo": ""
     }
