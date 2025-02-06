@@ -42,8 +42,9 @@
     },
     {
         "nombre": "David",
-        "logo": "",
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png",
         "puntuacion": 0,
+        "equipo": "Atlético de Madrid",
         "grupo": ""
     },
     {
