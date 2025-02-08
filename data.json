@@ -4,74 +4,68 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
         "puntuacion": 0,
         "equipo": "Francia",
-        "grupo": ""
+        "grupo": "B"
     },
     {
         "nombre": "Julio",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_64x64.png",
         "puntuacion": 0,
         "equipo": "Juventus",
-        "grupo": ""
+        "grupo": "A"
     },
     {
         "nombre": "Abne",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/-_cmntP5q_pHL7g5LfkRiw_64x64.png",
         "puntuacion": 0,
         "equipo": "Bayern de Múnich",
-        "grupo": ""
+        "grupo": "A"
     },
     {
         "nombre": "Luis",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
         "puntuacion": 0,
-        "grupo": ""
+        "grupo": "A"
     },
     {
         "nombre": "Eduardo",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_64x64.png",
         "puntuacion": 0,
         "equipo": "Manchester",
-        "grupo": ""
+        "grupo": "A"
     },
     {
         "nombre": "Adrian",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/nGfV05dipbAc7zzojivKew_64x64.png",
         "puntuacion": 0,
         "equipo": "Liverpool",
-        "grupo": ""
+        "grupo": "B"
     },
     {
         "nombre": "David",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png",
         "puntuacion": 0,
         "equipo": "Atlético de Madrid",
-        "grupo": ""
-    },
-    {
-        "nombre": "Manuel",
-        "logo": "",
-        "puntuacion": 0,
-        "grupo": ""
+        "grupo": "B"
     },
     {
         "nombre": "Jaime",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
         "puntuacion": 0,
         "equipo": "Real Madrid",
-        "grupo": ""
+        "grupo": "B"
     },
     {
         "nombre": "Luigi",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
         "equipo": "Barcelona",
         "puntuacion": 0,
-        "grupo": ""
+        "grupo": "A"
     },
     {
         "nombre": "Alejo",
         "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_64x64.png",
         "equipo": "PSG",
         "puntuacion": 0,
-        "grupo": ""
+        "grupo": "B"
     }
 ]
