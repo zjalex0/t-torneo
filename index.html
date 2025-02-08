@@ -602,8 +602,9 @@
     </div>
 
     <script>
+
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("./app/data.json", { cache: "no-cache" })
+        fetch("data.json", { cache: "no-cache" })
           .then((response) => response.json())
           .then((data) => {
             const teamList = document.getElementById("team-list");
@@ -614,13 +615,13 @@
             });
           });
 
-        fetch("partidos.json")
+        fetch("partidos.json", { cache: "no-cache" })
           .then((response) => response.json())
           .then((data) => {
             const scheduleList = document.getElementById("schedule-list");
             data.partidos.forEach((match) => {
               const li = document.createElement("li");
-              li.innerHTML = `<img src="https://placehold.co/50x50" alt="Logo del ${match.equipo1}" width="50" height="50"><span>${match.index} - ${match.equipo1} vs ${match.equipo2}</span>`;
+              li.innerHTML = `<span> ${match.index} - </span><img src="${match.equipo1}" alt="Logo" width="50" height="50"><span> vs </span><img src="${match.equipo2}" alt="Logo" width="50" height="50">&emsp;&emsp; |<span><strong>Puntos: </strong>${match.puntos1} - ${match.puntos1}</span>&emsp;&emsp; |<span><strong>Tarjetas: </strong> 🟨 ${match.amarillas} - 🟥 ${match.rojas}</span>`;
               scheduleList.appendChild(li);
             });
           });
@@ -655,7 +656,7 @@
               const row = document.createElement("tr");
               row.innerHTML = `
                         <td>${index + 1}</td>
-                        <td>${!!jugador.logo ? `<img src="${jugador.logo}" alt="Logo ${jugador.nombre}" width="50" height="50">` : ''}</td>
+                        <td>${!!jugador.logo ? `<img src="${jugador.logo}" alt="Logo ${jugador.nombre}" width="50" height="50"> ${jugador.nombre}` : ''}</td>
                         <td>${jugador.puntuacion}</td>
                     `;
               tablaBody.appendChild(row);
