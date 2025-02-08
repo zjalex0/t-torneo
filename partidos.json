@@ -1,0 +1,184 @@
+{
+  "partidos": [
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 1
+      },
+      {
+          "equipo1": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/nGfV05dipbAc7zzojivKew_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 2
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 3
+      },
+      {
+          "equipo1": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 4
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 5
+      },
+      {
+          "equipo1": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 6
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 7
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/nGfV05dipbAc7zzojivKew_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 8
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 9
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/nGfV05dipbAc7zzojivKew_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 10
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 11
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 12
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 13
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/-_cmntP5q_pHL7g5LfkRiw_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 14
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 15
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/-_cmntP5q_pHL7g5LfkRiw_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 16
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 17
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/-_cmntP5q_pHL7g5LfkRiw_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/nGfV05dipbAc7zzojivKew_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 18
+      },
+      {
+          "equipo1": "https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_64x64.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 19
+      },
+      {
+          "equipo1": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png",
+          "equipo2": "https://ssl.gstatic.com/onebox/media/sports/logos/-_cmntP5q_pHL7g5LfkRiw_64x64.png",
+          "puntos1": 0,
+          "puntos2": 0,
+          "amarillas": 0,
+          "rojas": 0,
+          "index": 20
+      }
+  ]
+}
